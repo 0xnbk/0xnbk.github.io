@@ -20,7 +20,7 @@ html, body { height: 100%; padding: 0; margin: 0; }
 
 body {
  	font:16px/24px 'Lato', sans-serif;
-	background:#2a2f3a;
+	background:#e9573f;
 	font-weight: 400;
 	text-align:center;
 	text-rendering: optimizeLegibility;
@@ -170,7 +170,7 @@ p { margin: 20px 0; }
 	top: 0;
 	bottom: 0;
 	right: 0;
-	color: #233143!important;
+	color: sandybrown!important;
 	white-space: pre-wrap;
 	white-space: -moz-pre-wrap;
 	white-space: -o-pre-wrap;
@@ -187,7 +187,7 @@ p { margin: 20px 0; }
 	-webkit-transition-delay: 2s;
 	transition-delay: 0;
 }
-.bgterminal .cursor { background: #233143; }
+.bgterminal .cursor { background: #ffffff; }
 
 /*-----------------------------------------------------------------------------------*/
 /*	02: INTRO PAGE
@@ -393,7 +393,7 @@ input { outline: none; }
 #preloader {
 	position: fixed;
 	top: 0; left: 0; right: 0; bottom: 0;
-	background-color: #182534;
+	background-color: #e9573f;
 	z-index: 9999;
 }
 .status1 {

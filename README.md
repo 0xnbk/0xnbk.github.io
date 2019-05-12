@@ -1,4 +1,4 @@
-itsnbk.github.io
+nbkdotdev.github.io
 ===================
 
 My personal homepage

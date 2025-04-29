@@ -1,0 +1,44 @@
+@media (max-width: 767px) {
+  .fa-times.close,
+  #close.fa-times {
+    top: 15px !important;
+    right: 15px !important;
+    width: 36px !important;
+    height: 36px !important;
+    line-height: 36px !important;
+    font-size: 20px !important;
+  }
+  
+  /* Add padding to content to avoid overlap with fixed close button */
+  #page-right .container.block,
+  .overlay-content .container {
+    padding-top: 60px !important;
+  }
+  
+  /* Ensure the theme switch and close button don't overlap */
+  .theme-switch-wrapper {
+    top: 15px !important;
+    left: 15px !important;
+  }
+}
+
+/* Fix for Safari resizing issues */
+@media screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 0) {
+  .fa-times.close,
+  #close.fa-times {
+    position: fixed !important;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+  
+  #overlay, #page-right {
+    position: relative;
+  }
+  
+  #overlay .overlay-content,
+  #page-right > div {
+    position: relative;
+    overflow: visible;
+  }
+}

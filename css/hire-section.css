@@ -1,0 +1,119 @@
+/* Simple and Elegant Hire Section in Contact Modal */
+.si-icon-briefcase {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+}
+
+.si-icon-briefcase i {
+  color: var(--icon-color);
+  font-size: 32px;
+}
+
+.hire-heading {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 15px 0;
+  color: var(--heading-color);
+  position: relative;
+  display: inline-block;
+}
+
+.text-center {
+  text-align: center;
+  width: 100%;
+  display: block;
+}
+
+.hire-heading::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 2px;
+  background-color: var(--icon-color);
+}
+
+.hire-text {
+  margin: 15px auto 30px;
+  line-height: 1.6;
+  color: var(--text);
+  max-width: 800px;
+  width: 90%;
+}
+
+.highlight {
+  color: var(--icon-color);
+  font-weight: 700;
+  transition: all 0.2s ease;
+}
+
+.highlight:hover {
+  opacity: 0.9;
+}
+
+/* Available for Hire Button on Landing Page */
+.hire-button-container {
+  margin: 25px auto 10px;
+  text-align: center;
+  display: block;
+  clear: both;
+}
+
+.hire-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--icon-color);
+  color: white !important;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  border: 2px solid var(--icon-color);
+}
+
+.hire-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  background-color: transparent;
+  color: var(--icon-color) !important;
+}
+
+.hire-button i {
+  margin-right: 8px;
+}
+
+/* Pulsing animation for the hire button */
+@keyframes subtle-pulse {
+  0% {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  }
+  50% {
+    box-shadow: 0 4px 15px rgba(233, 87, 63, 0.4);
+  }
+  100% {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.hire-button {
+  animation: subtle-pulse 3s infinite;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .availability-status {
+    font-size: 16px;
+  }
+  
+  .hire-button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}

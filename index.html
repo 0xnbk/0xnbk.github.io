@@ -1,32 +1,48 @@
 <!DOCTYPE html>
 <head>
 	<meta charset="utf-8" />
-	<title>N.B.K</title>
+	<title>NBK - Laravel Developer</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 	<meta name="description" content="">
-	<meta name="author" content="NBK>
+	<meta name="author" content="NBK">
+	<!-- Favicon -->
+	<link rel="icon" href="img/logo.png" type="image/png">
 	<link rel="shortcut icon" href="img/logo.png">
+	<link rel="apple-touch-icon" href="img/logo.png">
 	<link rel="canonical" href="https://nbk.dev" />
 <!--FONTS-->
-	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700">
-	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Inconsolata" type="text/css" />
+	<link rel="preconnect" href="https://fonts.bunny.net">
+	<link href="https://fonts.bunny.net/css?family=lato:400,700|inconsolata:400" rel="stylesheet">
 	<link rel="stylesheet" href="css/bootstrap.min.css" />
 	<link rel="stylesheet" href="css/style.css" />
 	<link rel="stylesheet" href="css/animate.css" />
 	<link rel="stylesheet" href="css/fork-awesome.min.css" />
+	<link rel="stylesheet" href="css/theme.css" />
+	<link rel="stylesheet" href="css/skills.css" />
+	<link rel="stylesheet" href="css/hire-section.css" />
 	<link rel="stylesheet" href="css/jquery.mmenu.all.css" />
 <!--[if lt IE 9]>
 	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
 	<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
 <![endif]-->
 </head>
-
 <body>
+	<div class="theme-switch-wrapper">
+		<label class="theme-switch" for="checkbox" title="Toggle dark/light mode">
+			<input type="checkbox" id="checkbox" />
+			<div class="slider">
+				<i class="fa fa-sun light-icon"></i>
+				<i class="fa fa-moon dark-icon"></i>
+			</div>
+		</label>
+	</div>
 <!--PRELOADER-->
 	<div id="preloader">
 		<div id="status">
-			<div class="status1"><i class="fa fa-clock-o fa-2x fa-spin"></i></div>
-			<div class="status2"></div>
+			<div class="spinner">
+				<div class="double-bounce1"></div>
+				<div class="double-bounce2"></div>
+			</div>
 		</div>
 	</div>
 
@@ -77,6 +93,9 @@
 									<li>
 										<a href="https://pixelfed.social/nbkdotdev" target="_blank" title="Pixelfed"><i class="fa fa-pixelfed"></i></a>
 									</li>
+									<li>
+										<a href="https://pentesterlab.com/profile/0xnbk" target="_blank" title="PentesterLab"><i class="fa fa-shield"></i></a>
+									</li>
 							
 								</ul>
 							</div>
@@ -90,13 +109,20 @@
 
 			<i class="fa fa-dot-circle-o size wow bounceIn" data-wow-duration="2s" data-wow-delay="5s"></i>
 				<span class="link-effect wow bounceIn" data-wow-duration="2s" data-wow-delay="5.5s">
-					<a href="http://blog.nbk.dev" target="_blank">blog</a>
+					<a href="https://on.nbk.dev/blog" target="_blank">blog</a>
 				</span>
 			<i class="fa fa-dot-circle-o size wow bounceIn" data-wow-duration="2s" data-wow-delay="6s"></i>
 
 			<span class="link-effect wow bounceIn" data-wow-duration="2s" data-wow-delay="6.5s">
 				<a href="#page-right">contact</a><i class="fa fa-arrow-right marg-left5"></i>
 			</span>
+
+			<!-- Available for Hire Button -->
+			<div class="hire-button-container wow bounceIn" data-wow-duration="2s" data-wow-delay="7s">
+				<a href="#page-right" class="hire-button">
+					<i class="fa fa-briefcase"></i> Available for Hire
+				</a>
+			</div>
 		<!--//LINKS-->
                 <p class="copyright">Copyright &copy; 2018-<script>document.write(new Date().getFullYear())</script> nbk (dot) dev</p>
 			</div>
@@ -122,8 +148,36 @@
 							</h1>
 
 							<p class="lead wow bounceInRight pad5" data-wow-duration="2s">
-								I am a full stack developer, familiar with Angular, PHP, Python, Node and various other technologies. Apart from creating websites, my interests includes building applications for Desktop & Mobile, creating browser extensions etc. I love to spend time in learning & experimenting with new technologies. I am a <a href="http://en.wikipedia.org/wiki/Free_and_open_source_software" target="_blank">FLOSS</a> supporter and work mainly on <a href="http://en.wikipedia.org/wiki/Open_source" target="_blank">Open Source</a> technologies and Tools.
-							</p> 
+								A programmer with over 15 years of experience in developing and maintaining complex web and RESTful applications, mainly with <strong>PHP</strong> and <strong><a href="https://laravel.com" target="_blank" rel="noopener">Laravel</a></strong>. Passionate about writing high quality, maintainable and testable code. Interested in working on multiple platforms, learning & experimenting with new technologies and have a keen eye on web security. I am not bound to a particular tech stack and can learn new technologies on the go.
+							</p>
+
+							<div class="skills-container wow bounceInRight" data-wow-duration="2s" data-wow-delay="0.5s">
+								<div class="skills-title">Tech Stack</div>
+								<div class="skills-tags">
+									<span class="skill-tag"><i class="fa fa-php"></i> PHP</span>
+									<span class="skill-tag"><i class="fa fa-laravel"></i> Laravel</span>
+									<span class="skill-tag"><i class="fa fa-bolt"></i> Livewire</span>
+									<span class="skill-tag"><i class="fa fa-code"></i> Hono</span>
+									<span class="skill-tag"><i class="fa fa-code"></i> Slim</span>
+									<span class="skill-tag"><i class="fa fa-nodejs"></i> Node</span>
+									<span class="skill-tag"><i class="fa fa-android"></i> Kotlin</span>
+									<span class="skill-tag"><i class="fa fa-code"></i> TypeScript</span>
+									<span class="skill-tag"><i class="fa fa-git"></i> Git</span>
+									<span class="skill-tag"><i class="fa fa-ship"></i> Docker</span>
+									<span class="skill-tag"><i class="fa fa-database"></i> MySQL</span>
+									<span class="skill-tag"><i class="fa fa-database"></i> MongoDB</span>
+									<span class="skill-tag"><i class="fa fa-database"></i> Redis</span>
+									<span class="skill-tag"><i class="fa fa-python"></i> Python</span>
+									<span class="skill-tag"><i class="fa fa-cloud"></i> Cloudflare</span>
+									<span class="skill-tag"><i class="fa fa-amazon"></i> AWS</span>
+									<span class="skill-tag"><i class="fa fa-server"></i> Hetzner</span>
+									<span class="skill-tag"><i class="fa fa-digitalocean"></i> DigitalOcean</span>
+									<span class="skill-tag"><i class="fa fa-cloud"></i> Vercel</span>
+									<span class="skill-tag"><i class="fa fa-css3"></i> TailwindCSS</span>
+									<span class="skill-tag"><i class="fa fa-code"></i> Angular</span>
+									<span class="skill-tag"><i class="fa fa-shield"></i> OWASP</span>
+								</div>
+							</div>
 
 					</div>
 				</div>
@@ -144,7 +198,18 @@
 									<span class="si-icon si-icon-mail" data-icon-name="mail"></span>
 								</div>
 								<p class="lead wow bounceInRight pad5" data-wow-duration="2s">
-									<a href="javascript:void(0)" target="_blank">nbk (at) duck (dot) com</a>
+									<a href="javascript:void(0)" target="_blank">hello (at) nbk (dot) email</a>
+								</p>
+
+								<!-- Available for Hire Section -->
+								<div class="si-icons si-icons-hover wow bounceIn" data-wow-duration="2s" data-wow-delay="1.5s">
+									<span class="si-icon-briefcase">
+										<i class="fa fa-briefcase"></i>
+									</span>
+								</div>
+								<h3 class="hire-heading wow bounceInRight text-center" data-wow-duration="2s">Available for Hire</h3>
+								<p class="lead hire-text wow bounceInRight text-center" data-wow-duration="2s">
+									Available for <strong class="highlight">fully remote</strong> opportunities with an <strong class="highlight">immediate start</strong>. Open to both <strong class="highlight">contract</strong> and <strong class="highlight">full-time</strong> positions.
 								</p>
 								
 						</div>
@@ -180,52 +245,105 @@
 </div>
 
 <!--SCRIPTS-->
+	<!-- Essential libraries loaded first -->
 	<script src="js/jquery.js"></script>
-	<script src="js/retina.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/scripts.js"></script>
-	<script src="js/wow.js"></script>
-	<script src="js/jquery.mmenu.min.all.js"></script>
-	<script src="js/modernizr.custom.js"></script>
-	<script src="js/snap.svg-min.js"></script>
-	<script src="js/svgicons-config.js"></script>
-	<script src="js/svgicons.js"></script>
-	<script>
-		//<![CDATA[
-			(function() {
-				[].slice.call( document.querySelectorAll( '.si-icons-default > .si-icon' ) ).forEach( function( el ) {
-					var svgicon = new svgIcon( el, svgIconConfig );
-				} );
-			new svgIcon( document.querySelector( '.si-icons-hover .si-icon-hourglass' ), svgIconConfig, { easing : mina.backin, evtoggle : 'mouseover', size : { w : 80, h : 80 } } );
-			new svgIcon( document.querySelector( '.si-icons-hover .si-icon-clock' ), svgIconConfig, { easing : mina.backin, evtoggle : 'mouseover', size : { w : 80, h : 80 } } );
-			new svgIcon( document.querySelector( '.si-icons-hover .si-icon-mail' ), svgIconConfig, { easing : mina.backin, evtoggle : 'mouseover', size : { w : 80, h : 80 } } );
-			new svgIcon( document.querySelector( '.si-icons-hover .si-icon-flag' ), svgIconConfig, { easing : mina.backin, evtoggle : 'mouseover', size : { w : 80, h : 80 } } );
-		})();
-		//]]>
-	</script>
-	<!--BACKGROUND IMAGE-->
-	<script type="text/javascript" src="js/jquery.vegas.min.js"></script>
- 	<script>
-		//<![CDATA[
-    		$(function() {
-        		$.vegas({
-   					src:'img/background.jpg'
-				})('overlay');
-			});
-		//]]>
-	</script>
-	<script>
-	//<![CDATA[
-		$(document).ready(function(){
-			$('#terminal').bgTerminal({
-				url: 'index.html',
-				glow: false,
-				speed: 100,
-				wait: 1000
-			});
-		});
-		//]]>
-	</script>
+	<script src="js/bootstrap.min.js" defer></script>
 
+	<!-- Feature libraries loaded with defer -->
+	<script src="js/jquery.mmenu.min.all.js" defer></script>
+	<script src="js/jquery.vegas.min.js" defer></script>
+	<script src="js/wow.js" defer></script>
+	<script src="js/retina.js" defer></script>
+	<script src="js/modernizr.custom.js" defer></script>
+
+	<!-- SVG handling libraries -->
+	<script src="js/snap.svg-min.js" defer></script>
+	<script src="js/svgicons-config.js" defer></script>
+	<script src="js/svgicons.js" defer></script>
+
+	<!-- Main script file with custom code -->
+	<script src="js/scripts.js" defer></script>
+
+	<!-- Consolidated initialization scripts -->
+	<script>
+		// Wait for DOM to be fully loaded
+		document.addEventListener('DOMContentLoaded', function() {
+			// Initialize SVG icons when resources are loaded
+			window.addEventListener('load', function() {
+				// Initialize default icons
+				[].slice.call(document.querySelectorAll('.si-icons-default > .si-icon')).forEach(function(el) {
+					var svgicon = new svgIcon(el, svgIconConfig);
+				});
+
+				// Initialize hover icons
+				const hoverConfig = { easing: mina.backin, evtoggle: 'mouseover', size: { w: 80, h: 80 } };
+				const hoverIcons = [
+					'.si-icon-hourglass',
+					'.si-icon-clock',
+					'.si-icon-mail',
+					'.si-icon-flag'
+				];
+
+				hoverIcons.forEach(function(iconClass) {
+					const el = document.querySelector('.si-icons-hover ' + iconClass);
+					if (el) new svgIcon(el, svgIconConfig, hoverConfig);
+				});
+			});
+
+			// Initialize Vegas background when jQuery is ready
+			$(function() {
+				$.vegas({
+					src:'img/background.jpg',
+					overlay: true
+				});
+				
+				// Update overlay when theme changes
+				const updateOverlay = () => {
+					const theme = localStorage.getItem('theme') || 'light';
+					const overlayColor = getComputedStyle(document.documentElement).getPropertyValue('--bg-overlay').trim();
+					$('.vegas-overlay').css('background', overlayColor);
+				};
+				
+				// Initial overlay setup
+				updateOverlay();
+				
+				// Update overlay when theme changes
+				document.addEventListener('themeChanged', updateOverlay);
+
+				// Initialize terminal background
+				$('#terminal').bgTerminal({
+					url: 'index.html',
+					glow: false,
+					speed: 100,
+					wait: 1000
+				});
+			});
+
+			// Theme switcher functionality
+			const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+			const currentTheme = localStorage.getItem('theme');
+
+			if (currentTheme) {
+				document.documentElement.setAttribute('data-theme', currentTheme);
+				if (currentTheme === 'dark') {
+					toggleSwitch.checked = true;
+				}
+			}
+
+			function switchTheme(e) {
+				if (e.target.checked) {
+					document.documentElement.setAttribute('data-theme', 'dark');
+					localStorage.setItem('theme', 'dark');
+				} else {
+					document.documentElement.setAttribute('data-theme', 'light');
+					localStorage.setItem('theme', 'light');
+				}
+				// Dispatch theme change event
+				document.dispatchEvent(new Event('themeChanged'));
+			}
+
+			toggleSwitch.addEventListener('change', switchTheme, false);
+		});
+	</script>
 </body>
 </html>

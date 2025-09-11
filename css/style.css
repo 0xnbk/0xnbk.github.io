@@ -396,6 +396,14 @@ input { outline: none; }
 #social-icons ul li a:hover { opacity:0.8; }
 #social-icons a, #social-icons a:visited, #social-icons a:hover, #social-icons a:active, #social-icons a:focus { outline:none; text-decoration:none; background:transparent; }
 
+/* Custom SVG icon styling for X (Twitter) */
+#social-icons svg {
+	width: 30px;
+	height: 30px;
+	vertical-align: middle;
+	fill: currentColor;
+}
+
 /*-----------------------------------------------------------------------------------*/
 /*	05: ABOUT PAGE
 /*-----------------------------------------------------------------------------------*/
